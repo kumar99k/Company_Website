@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="about.css">
+  
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="logo"><h1><a href="#">Creative</a></h1></div>
+    <ul class="links">
+      <li id="glass"><a href="index.html">Home</a></li>
+      <li id="glass"><a href="./about.html">About</a></li>
+      <li id="glass"><a href="services.html">Services</a></li>
+      <li id="glass"><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a href="joinus.html" class="action_btn">Join Us</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+ </div>
+ 
+ <div class="dropdown_menu">
+  <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li><a href="joinus.html" class="action_btn">Join Us</a> </li>
+     
+ </div>
+  
+</header>
+<section id="hero">
+  <br><br>
+  <h3>20+ years of Proud Existence in Web, Intranet, Mobile App development in India</h3>
+ 
+
+  
+    <div class="content" style="color: black;">
+      
+      <p style=" font-size: 1.3rem;
+      margin-bottom: 1rem;"><br>Creative empowers people to achieve their full potential and realize their dreams with us. It is said that companies whose employees understand the mission and goals enjoy a 29 percent greater return than other corporations. Creative Web Mall aims to be the enrich the country with latest softwares satisfying every business wants and lead amongst the top companies for software development in India.
+
+        Creative Web Mall (India) Pvt Ltd is devoted in making effective web applications which are inventive on their own but economical and gratified. Creative thinkers common mission is to provide supportive and positive learning environment in which every member has the opportunity to develop communication and leadership skills, which in turn promotes self-confidence and individual personal growth.
+        
+        Creative Web Mall (India) Pvt Ltd has established a strategic framework within both people and organization for significant success. </p><br>
+
+    </div>
+    <BR>
+    <h3 style="text-align: center;">Our framework includes:</h3>
+    <div class="gallery"  >
+    <div class="cont">
+        <h1 style="color: orange;">01</h1>
+        <p><b>Vision For Company</b></p><br>
+        <p>A vision for company and its employees future</p><BR><BR><BR>
+      </div>
+      <div class="cont">
+        <h1 style="color: orange;">02</h1>
+        <p><b>Our Mission</b></p><br>
+        <p>A mission that defines work management and target to achieve by Creative’s team.</p><BR><BR>
+      </div>
+      <div class="cont">
+        <h1 style="color: orange;">03</h1>
+        <p><b>Values And Actions</b></p><br>
+        <p>Values that will shape actions of every member of the company.</p><BR><BR>
+      </div>
+      <div class="cont">
+        <h1 style="color: orange;">04</h1>
+        <p><b>Strategies</b></p><br>
+        <p>Strategies that are key to our success.</p><BR><BR><BR>
+      </div>
+      <div class="cont">
+        <h1 style="color: orange;">05</h1>
+        <p><b>Positive Approaches</b></p><br>
+        <p>Positive approaches for all kinds of projects, and</p><BR><BR><BR>
+      </div>
+      <div class="cont">
+        <h1 style="color: orange;">06</h1>
+        <p><b>Goals And Action Plans</b></p><br>
+        <p>Goals and action plans to guide the team daily, weekly and monthly actions.</p><BR><BR>
+      </div>
+    
+  </div>
+
+</section>
+
+
+
+<script>
+  const toggleBtn =document.querySelector('.toggle_btn')
+  const toggleBtnIcon =document.querySelector('.toggle_btn i')
+  const dropDownMenu =document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+
+</script>
+
+</body>
+
+</html>

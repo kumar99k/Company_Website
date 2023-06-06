@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="service.css">
+  
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="logo"><h1><a href="#">Creative</a></h1></div>
+
+    <ul class="links">
+      <li id="glass"><a href="index.html">Home</a></li>
+      <li id="glass"><a href="./about.html">About</a></li>
+      <li id="glass"><a href="services.html">Services</a></li>
+      <li id="glass"><a href="./contact.html">Contact</a></li>
+      </ul>
+      
+    <a href="joinus.html" class="action_btn">Join Us</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+ </div>
+ <div class="dropdown_menu">
+  <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li>    <a href="joinus.html" class="action_btn">Join Us</a> </li>
+     
+ </div>
+  
+</header>
+<section id="hero">
+  <br><br>
+  <h2>Our Reputation of Competencies</h2>
+  <p>One-Stop Turnkey Web and Software Solutions</p>
+
+  <div class="gallery"  style="color: black";>
+    <div class="cont">
+      <img src="./img/cake4.png">
+      <h1>Intranet Development</h1>
+      <p>Web Applications, Android App, IOS App, Windows App</p><br>
+    </div>
+
+      <div class="cont">
+        <img src="./img/cake5.png">
+        <h1>Internet Marketing</h1>
+        <p>
+          SEO, PPC, Social Media marketing, Online reputation management</p><br>
+      </div>
+    
+        <div class="cont">
+          <img src="./img/cake6.png">
+          <h1>
+            Web Design</h1>
+          <p>
+            MobileFirst, Responsive, Wordpress, Tailwind, Gatsby, Next.js website design
+          </p><br>
+        </div>
+    <div class="cont">
+      <img src="./img/caake7.png">
+      <h1>Enterprise Solutions</h1>
+      <p>Integrations, SAAS software, CRM, ERP, CAPEX, OPEX solutions</p><br>
+    </div>
+
+      <div class="cont">
+        <img src="./img/cake8.png">
+        <h1>Bespoke Development</h1>
+        <p>
+          ASP.Net, React.js, Flutter, Python Development, PHP</p><br>
+      </div>
+    
+        <div class="cont">
+          <img src="./img/cake9.png">
+          <h1>
+            IT Staffing
+          </h1>
+          <p> Hire Resources permanent, on demand, man per hour, project basis.</p><br>
+        </div>
+    
+          <div class="cont">
+            <img src="./img/cake100.png">
+            <h1>CMS</h1>
+            <p>Content Management System - Web, Intranet, Extranet</p><br>
+          </div>
+          <div class="cont">
+            <img src="./img/cake12.png">
+            <h1>E-Commerce
+             </h1>
+            <p>  B2B, B2C, Bespoke Ecommerce website designing with SEO
+            </p><br>
+          </div>
+      
+            <div class="cont">
+              <img src="./img/cake11.png">
+              <h1>Email And Hosting</h1>
+              <p>
+                Premium Email, Servers, Corporate Mailing Solutions</p><br>
+            </div>
+                
+  </div>
+
+</section>
+
+
+
+<script>
+  const toggleBtn =document.querySelector('.toggle_btn')
+  const toggleBtnIcon =document.querySelector('.toggle_btn i')
+  const dropDownMenu =document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+
+</script>
+
+</body>
+</html>

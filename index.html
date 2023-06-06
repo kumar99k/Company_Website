@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  
+</head>
+<body>
+  <header>
+  <div class="nav">
+    <div class="logo"><h1><a href="#">Creative</a></h1></div>
+    <ul class="links">
+      <li id="glass"><a href="index.html">Home</a></li>
+      <li id="glass"><a href="./about.html">About</a></li>
+      <li id="glass"><a href="services.html">Services</a></li>
+      <li id="glass"><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a href="joinus.html" class="action_btn">Join Us</a>
+    <div class="toggle_btn">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+ </div>
+ 
+ <div class="dropdown_menu">
+  <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      
+      <li><a href="joinus.html" class="action_btn">Join Us</a> </li>
+     
+ </div>
+  
+</header>
+<section id="hero">
+  <br><br>
+  <h3>Creative Individuals For Mobile And Web Applications</h3>
+  <p>The team which looks-after your goal to make you shine.</p>
+
+  <div class="gallery"  style="color: black";>
+    <div class="cont">
+      <img src="./img/cake.png">
+      <h1>Since 2003</h1>
+      <p>Young at heart, but full of tradition</p><br>
+    </div>
+
+      <div class="cont">
+        <img src="./img/cake1.png">
+        <h1>5000+</h1>
+        <p>Satisfied clients and growing</p><br>
+      </div>
+    
+        <div class="cont">
+          <img src="./img/cake3.png">
+          <h1>30</h1>
+          <p>Countries served</p><br>
+        </div>
+    
+          <div class="cont">
+            <img src="./img/cake2.png">
+            <h1>3000+</h1>
+            <p>Custom development projects</p><br>
+          </div>
+              
+  </div>
+
+</section>
+
+
+<script>
+  const toggleBtn =document.querySelector('.toggle_btn')
+  const toggleBtnIcon =document.querySelector('.toggle_btn i')
+  const dropDownMenu =document.querySelector('.dropdown_menu')
+
+  toggleBtn.onclick = function(){
+    dropDownMenu.classList.toggle('open')
+    const isOpen = dropDownMenu.classList.contains('open')
+
+    toggleBtnIcon.classList = isOpen
+    ? 'fa-solid fa-xmark'
+      : 'fa-solid fa-bars'
+  }
+
+</script>
+
+</body>
+
+</html>
